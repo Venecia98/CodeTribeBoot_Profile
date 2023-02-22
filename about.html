@@ -1,0 +1,122 @@
+</!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+            <title>Welcome to Kanego's digital profile</title>
+            <meta name="name" content="Kanego Mashile">
+            <meta name="description" content="Kanego Mashile is a budding IT. Looking to improve my Code knowledge base. Welcome to my life."/>
+            <link rel="stylesheet" href="style.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <script src="https://kit.fontawesome.com/a3b2c4476f.js" crossorigin="anonymous"></script>
+            <link rel = "icon" type = "images/png" href = "logo.png">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+        </head>
+<body>
+<section class="sub-header">
+<nav>
+    <a href="index.html"><img src="logo.png"></a>
+    <div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<h1>About Me</h1>
+</section>
+
+<!--Course-->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1 id="names"></h1>
+            <p id="demo"></p>
+             
+            <dl>
+                 <dt id="Project1">Diatla Restuarant & Bar</dt>
+                 <dd id="Bio1">- Floor Manager</dd>
+                 <a class="hero-btn red-btn">2019-2020</a>
+
+    
+            </dl> 
+
+            
+
+             <dt id="Project1">Inchub Polokwane (Pty) Ltd</dt>
+             <dd id="Bio2">- IncHub Polokwane is a digital media cooporate offering solutions and services in digital media markering, software and electronic through inhouse collaboration by member startups and entrepreneurs.</dd> 
+
+             <a href="#coming soon" class="hero-btn red-btn">2021-2022</a>
+
+             <dt id="Project1">Capricorn TVET college</dt>
+                <dd id="Bio4">-NCV in Information Technology & Computer Science</dd>
+            </dl> 
+
+             <a href="#" class="hero-btn red-btn">2020</a>
+
+        </div>
+        <div class="about-col">
+            <img src="kanego2.jpeg" width="500" height="500">
+        </div>
+    </div>
+    <div>
+        
+    </div>
+</section>
+
+<!--Call to action-->
+<section class="cta">
+    <h1> #I am a proud Inchubian<br>A Keen software developer</h1>
+    <a href="contact.html" class="hero-btn">Contact Us</a>
+</section>
+
+<!--footer-->
+<section class="footer">
+    <h4>About us </h4>
+    <p>Kanego Mashile is a budding IT. Looking to improve my Code knowledge base. Welcome to my life.</p>
+    <div class="icons">
+        <a href="https://www.facebook.com/kanegoveiigh.mashile/" class="fab fa-facebook"></a>
+        <a href="https://www.instagram.com/venecia_mashile/" class="fab fa-instagram"></a>
+       
+    </div>
+    <p>Made with <i class="fas fa-heart"></i> By Kanego Mashile</p>
+</section>
+
+
+<script>
+
+let person = "Kanego Mashile is a budding IT. Looking to improve my Code knowledge base. Welcome to my life.";
+let answer = 'Started 2019';
+
+document.getElementById("demo").innerHTML =
+person + "<br>" + answer;
+
+    let Name; 
+    Name = "Kanego Mashile";
+    document.getElementById('names').innerHTML = Name;
+
+    let About; 
+    About = "About Me";
+    document.getElementById('About').innerHTML = About;
+
+    let inchubplk; 
+    inchubplk = "I am a keen learner of most and almost anything new, aslong as it is tech orientated, i'm always willing to learn";
+    document.getElementById('inchubplk').innerHTML = inchubplk;
+
+
+    
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0"
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
